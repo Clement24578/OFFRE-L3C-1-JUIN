@@ -163,3 +163,13 @@ body {
   margin-top: 1rem;
   font-size: 0.9rem;
 }
+/* Conteneur du widget Canva */
+#canva-widget {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Forcer la transparence du fond du widget */
+.widget-wrapper iframe {
+  background: transparent !important;
+}
