@@ -163,13 +163,21 @@ body {
   margin-top: 1rem;
   font-size: 0.9rem;
 }
-/* Conteneur du widget Canva */
-#canva-widget {
-  padding: 2rem 0;
-  text-align: center;
+/* 1. Dimensions EXACTES du petit widget en bas à droite */
+.widget-crop {
+  width: 300px;      /* largeur du widget seulement */
+  height: 400px;     /* hauteur du widget seulement */
+  overflow: hidden;  /* masque tout ce qui dépasse */
+  margin: auto;      /* centre si besoin */
+  position: relative;
 }
 
-/* Forcer la transparence du fond du widget */
-.widget-wrapper iframe {
-  background: transparent !important;
+/* 2. Décaler l’iframe pour n’afficher QUE le widget */
+.widget-crop .canva-widget {
+  position: absolute;
+  top: -200px;    /* remonte l’iframe pour faire apparaître le widget */
+  left: -500px;   /* décale vers la gauche jusqu’au widget */
+  width: 800px;   /* conserver la taille originale pour que le widget reste net */
+  height: 600px;
+  background: transparent;
 }
