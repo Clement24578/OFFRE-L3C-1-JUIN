@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Inclus'iv Day - Widget d'accessibilité</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tête (hero) -->
+  <header class="hero">
+    <div class="container">
+      <img src="logo.jpg" alt="Logo L3C" class="logo">
+      <h1>Widget d'accessibilité – Inclus'iv Day</h1>
+      <p class="subtitle">20 €/mois • Offre valable jusqu’au 23 mai 2025</p>
+      <button class="cta-btn">Je profite de l’offre</button>
+    </div>
+  </header>
+
+  <!-- Section Caractéristiques -->
+  <section class="features container">
+    <div class="feature">
+      <div class="icon">🤝</div>
+      <h3>Installation rapide</h3>
+      <p>Integrable en 2 min, conforme WCAG 2.1 pour tous vos utilisateurs.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🛠️</div>
+      <h3>Support dédié 24/7</h3>
+      <p>Assistance experte, réponse en moins de 30 min.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔄</div>
+      <h3>Mises à jour automatiques</h3>
+      <p>Garantie de conformité continue sans effort supplémentaire.</p>
+    </div>
+  </section>
+
+  <!-- Section Tarif et timer -->
+  <section class="pricing container">
+    <h2>20 €/mois</h2>
+    <div id="countdown">
+      <span id="days">00</span>j
+      <span id="hours">00</span>h
+      <span id="minutes">00</span>m
+      <span id="seconds">00</span>s
+    </div>
+    <p class="coupon">Code promo audit : <strong>INCL10</strong> (-10 %)</p>
+    <button class="cta-btn">Je m’abonne</button>
+  </section>
+
+  <!-- Section Inscription -->
+  <section class="signup container" id="signup">
+    <h2>Créez votre compte</h2>
+    <form name="signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="signup">
+      <p class="hidden"><label>Ne pas remplir <input name="bot-field"></label></p>
+      <div class="form-group">
+        <label for="name">Nom complet *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email professionnel *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="company">Entreprise</label>
+        <input type="text" id="company" name="company">
+      </div>
+      <div class="form-group">
+        <label for="role">Fonction</label>
+        <input type="text" id="role" name="role">
+      </div>
+      <button type="submit" class="submit-btn">Créer mon compte</button>
+      <p class="form-message"></p>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer container">
+    <a href="#">Politique de confidentialité</a>
+    <a href="#">Contact</a>
+    <p>© 2025 L3C. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
